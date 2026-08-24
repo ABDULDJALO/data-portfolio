@@ -1,12 +1,12 @@
 USE soporte_ti;
 
-//CREANDO TABLA PARA DEPARTAMENTOS
+--CREANDO TABLA PARA DEPARTAMENTOS
 CREATE TABLE departamentos (
     id_departamento INT PRIMARY KEY AUTO_INCREMENT,
     nombre_departamento VARCHAR(100) NOT NULL
 );
 
-//CREANDO TABLA PARA EMPLEADOS
+--CREANDO TABLA PARA EMPLEADOS
 CREATE TABLE empleados ( 
     id_empleado INT PRIMARY KEY AUTO_INCREMENT,
     nombre_empleado VARCHAR(100) NOT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE empleados (
     FOREIGN KEY (id_departamento) REFERENCES departamentos(id_departamento)
 );
 
-//CREANDO TABLA PARA EQUIPOS
+--CREANDO TABLA PARA EQUIPOS
 CREATE TABLE equipos (
     id_equipo INT PRIMARY KEY AUTO_INCREMENT,
     nombre_equipo VARCHAR(100) NOT NULL,
@@ -28,7 +28,7 @@ CREATE TABLE equipos (
     FOREIGN KEY (id_empleado) REFERENCES empleados(id_empleado)
 );
 
-//CREANDO TABLA PARA TICKETS 
+--CREANDO TABLA PARA TICKETS 
 CREATE TABLE tickets(
     id INT PRIMARY KEY AUTO_INCREMENT,
     empleado_id INT NOT NULL,
@@ -46,7 +46,7 @@ CREATE TABLE tickets(
     FOREIGN KEY (equipo_id) REFERENCES equipos(id_equipo)
 );
 
-//CREANDO TABLA PARA TECNICOS
+--CREANDO TABLA PARA TECNICOS
 CREATE TABLE tecnicos (
     id_tecnico INT PRIMARY KEY AUTO_INCREMENT,
     nombre_tecnico VARCHAR(100) NOT NULL,
@@ -55,7 +55,7 @@ CREATE TABLE tecnicos (
     especialidad_tecnico VARCHAR(100)
 );
 
-//CREANDO TABLA PARA CATEGORIAS
+--CREANDO TABLA PARA CATEGORIAS
 CREATE TABLE categorias (  
     id_categoria INT PRIMARY KEY AUTO_INCREMENT,
     nombre_categoria VARCHAR(100) NOT NULL,
