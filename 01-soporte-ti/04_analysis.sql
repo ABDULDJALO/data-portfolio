@@ -153,3 +153,54 @@ INNER JOIN tecnicos
 GROUP BY
     nombre_tecnico,
     apellido_tecnico; 
+
+
+
+
+    -- ============================================
+-- EJERCICIO 17: TICKETS Y EQUIPOS
+-- ============================================
+
+SELECT
+    tickets.id_ticket,
+    tickets.asunto,
+    equipos.nombre_equipo,
+    equipos.tipo_equipo,
+    equipos.marca,
+    tickets.prioridad
+FROM tickets
+INNER JOIN equipos
+    ON tickets.id_equipo = equipos.id_equipo;
+
+
+-- ============================================
+-- EJERCICIO 18: EMPLEADO + DEPARTAMENTO
+-- ============================================
+
+SELECT
+    empleados.nombre_empleado AS nombre,
+    empleados.apellido_empleado AS apellido,
+    empleados.cargo_empleado AS cargo,
+    departamentos.nombre_departamento AS departamento
+FROM empleados
+INNER JOIN departamentos
+    ON empleados.id_departamento = departamentos.id_departamento;
+
+
+-- ============================================
+-- EJERCICIO 19: TÉCNICO + ESPECIALIDAD + TICKETS
+-- ============================================
+
+SELECT
+    CONCAT(tecnicos.nombre_tecnico, ' ', tecnicos.apellido_tecnico) AS tecnico,
+    tecnicos.especialidad_tecnico AS especialidad,
+    COUNT(tickets.id_ticket) AS tickets_atendidos
+FROM tickets
+INNER JOIN tecnicos
+    ON tickets.id_tecnico = tecnicos.id_tecnico
+GROUP BY
+    tecnicos.nombre_tecnico,
+    tecnicos.apellido_tecnico,
+    tecnicos.especialidad_tecnico
+ORDER BY tickets_atendidos DESC;
+
