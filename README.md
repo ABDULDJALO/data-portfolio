@@ -153,8 +153,7 @@ Las 10 categorías presentan igualmente una distribución uniforme:
 
 ### Tickets por departamento
 
-- Los departamentos 1 al 10 tienen 2 tickets cada uno.
-- Los departamentos 11 al 20 tienen 1 ticket cada uno.
+Los departamentos 2 al 11 tienen 2 tickets cada uno, mientras que los departamentos 1 y 12 al 20 tienen 1 ticket cada uno.
 
 Por lo tanto, existe un empate entre los departamentos con mayor cantidad de tickets, con 2 tickets cada uno.
 
@@ -194,9 +193,9 @@ Esto permite practicar agrupaciones y comparaciones entre categorías sin que un
 
 ### 5. Distribución por departamentos
 
-Los departamentos 1 al 10 tienen 2 tickets cada uno, mientras que los departamentos 11 al 20 tienen 1 ticket cada uno.
+Los departamentos 2 al 11 tienen 2 tickets cada uno, mientras que los departamentos 1 Y 12 al 20 tienen 1 ticket cada uno.
 
-No existe un único departamento con mayor volumen de tickets, sino un empate entre los primeros 10 departamentos.
+Por lo tanto, existe un empate entre los departamentos con mayor cantidad de tickets, con 2 tickets cada uno.
 
 ---
 
