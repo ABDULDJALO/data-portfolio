@@ -116,10 +116,10 @@ Se desarrollaron 30 consultas SQL para practicar diferentes técnicas de consult
 
 | Prioridad | Tickets |
 |---|---:|
-| Alta | 9 |
+| Alta | 11 |
 | Media | 9 |
 | Baja | 9 |
-| Crítica | 3 |
+| Crítica | 1 |
 | **Total** | **30** |
 
 ### Tickets por estado
@@ -163,11 +163,11 @@ Por lo tanto, existe un empate entre los departamentos con mayor cantidad de tic
 
 ### 1. Distribución de prioridades
 
-Los tickets de prioridad Alta, Media y Baja presentan la misma cantidad de registros, con 9 tickets cada uno.
+La prioridad Alta es la más frecuente, con 11 de los 30 tickets.
 
-Los tickets de prioridad Crítica representan 3 de los 30 registros.
+Las prioridades Media y Baja tienen 9 tickets cada una.
 
-La distribución es equilibrada porque el dataset fue diseñado principalmente para practicar consultas SQL.
+Solo hay 1 ticket de prioridad Crítica.
 
 ### 2. Estado de los tickets
 
